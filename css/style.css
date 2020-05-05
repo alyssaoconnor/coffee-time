@@ -1,0 +1,253 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #004d75 0%, #006599 100%);
+}
+
+.sipper,
+.top__lead,
+.top__lead__reflection,
+.bottom__lead,
+.bottom__lead__reflection,
+.cup,
+.holder,
+.logo,
+.bean,
+.shadow {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+*::before,
+*::after {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+}
+
+.text__container {
+  position: relative;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+}
+
+.text {
+  position: relative;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 2.7em;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  z-index: 2;
+}
+
+.text:nth-child(1):before {
+  top: 50%;
+  left: 10%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px 0 #2e2e2e;
+}
+.text:nth-child(1):after {
+  top: 50%;
+  right: 9%;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px 0 #2e2e2e;
+}
+
+.text:nth-child(2) {
+  margin-top: -1.65em;
+  font-size: 2.7em;
+  color: #484848;
+  z-index: 1;
+  filter: blur(5px);
+}
+
+.container {
+  position: relative;
+  top: -5em;
+  width: 100%;
+  min-height: 540px;
+}
+
+.sipper {
+  top: 28.4%;
+  transform: translateX(-195%);
+  width: 44px;
+  height: 8px;
+  background-color: #3b3b3b;
+}
+
+.top__lead {
+  top: 35.4%;
+  width: 100px;
+  height: 18px;
+  border-radius: 7px;
+}
+.top__lead:before {
+  top: -100%;
+  left: 50%;
+  width: 100px;
+  border-bottom: 18px solid #2e2e2e;
+  border-right: 4px solid transparent;
+}
+.top__lead:after {
+  top: -100%;
+  left: -50%;
+  width: 100px;
+  border-bottom: 18px solid #3b3b3b;
+  border-left: 4px solid transparent;
+}
+
+.top__lead__reflection {
+  left: 119%;
+  top: -67.3%;
+  width: 50px;
+  height: 6px;
+  z-index: 3;
+}
+.top__lead__reflection:before {
+  width: 50px;
+  border-bottom: 10px solid #484848;
+  border-right: 2px solid transparent;
+}
+
+.bottom__lead {
+  top: 36%;
+  width: 218px;
+  height: 24px;
+  z-index: 2;
+}
+.bottom__lead:before {
+  left: 0%;
+  width: 109px;
+  height: 24px;
+  background-color: #3b3b3b;
+  border-radius: 6px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.bottom__lead:after {
+  left: 50%;
+  width: 109px;
+  height: 24px;
+  background-color: #2e2e2e;
+  border-radius: 6px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.bottom__lead__reflection {
+  left: 86%;
+  top: 50%;
+  width: 50px;
+  height: 12px;
+  background-color: #484848;
+  z-index: 3;
+}
+
+.cup {
+  width: 200px;
+  height: 240px;
+}
+.cup:before {
+  top: 0;
+  left: 50%;
+  width: 100px;
+  border-top: 240px solid #f7f4dc;
+  border-right: 20px solid transparent;
+}
+.cup:after {
+  top: 0;
+  left: 0;
+  width: 100px;
+  border-top: 240px solid #fcfbf1;
+  border-left: 20px solid transparent;
+}
+
+.holder {
+  width: 200px;
+  height: 130px;
+}
+.holder:before {
+  top: 0;
+  left: 49%;
+  width: 100px;
+  border-top: 130px solid #755e3e;
+  border-right: 11px solid transparent;
+}
+.holder:after {
+  top: 0;
+  left: 2px;
+  width: 98px;
+  border-top: 130px solid #967950;
+  border-left: 11px solid transparent;
+}
+
+.logo {
+  top: 55%;
+  box-sizing: border-box;
+  width: 80px;
+  height: 80px;
+  background-color: #f7f4dc;
+  border-radius: 50%;
+  border-left: 40px solid #fcfbf1;
+  box-shadow: 0 0 0 4px #54432c;
+  z-index: 4;
+}
+
+.bean {
+  top: 50%;
+  left: 16%;
+  width: 20px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #645135;
+  transform: rotate(20deg);
+}
+.bean:before {
+  width: 20px;
+  height: 26px;
+  border-right: 10px solid #54432c;
+  border-radius: 50%;
+}
+
+.bean:nth-child(2) {
+  top: 12%;
+  left: -25%;
+}
+
+.bean:nth-child(3) {
+  left: -65%;
+  transform: rotate(-50deg);
+}
+
+.shadow {
+  top: 92%;
+  width: 160px;
+  height: 20px;
+  background-color: #2e2e2e;
+  border-radius: 50%;
+  filter: blur(6px);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  .sipper {
+    top: 28.4%;
+  }
+
+  .top__lead {
+    top: 35.2%;
+  }
+}
